@@ -1,38 +1,252 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.heading
+{
+  width: 450%;
+}
+
+.navbar1
+{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(49, 194, 138);
+}
+
+
+.image img
+{
+  width: 30%;
+  height: 40%;
+  cursor: pointer;
+}
+
+.chat-container{
+  padding:.6rem 0;
+}
+
+.contact-list img{
+  width: 4%; 
+  padding: 1rem 1.1rem;
+  height: 50px;
+  position: fixed;
+  bottom: 0rem;
+  z-index: 1;
+  right: 1%;
+}
+
+.logo1 img
+{
+  width: 5%;
+  height: 5%;
+  margin-top: 0px;
+  cursor:pointer;
+}
+
+/* .heading */
+.logo1
+{
+  background-color: rgb(49, 194, 138);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  /* text-transform: uppercase; */
+ 
+}
+
+.button
+{
+  width: 100%;  
+  text-transform: uppercase;
+  font-weight: 800;
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+}
+
+.logo1 button
+{
+  font-size: 20px;
+  margin-top: 0%;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(49,194,138);
+}
+
+.nav:hover
+{
+  opacity: 1;
+  cursor: pointer;
+  border-bottom: 3px solid #fff;
+}
+
+/* Chats section */
+.chatList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 62.5%;
+  position: relative;
+}
+
+
+.user-image
+{
+   width: 5rem;
+   height: 5rem;
+   margin: 0 0;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+
+.profile{
+   display: flex;
+   align-items: center;
+}
+
+.last-chat-time{
+   margin-right:2rem;
+   font-size: 20px;
+}
+
+.chatList::after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right:1rem;
+   width: 92%;
+   height: 1px;
+   background: rgba(0,0,0,.2);
+}
+.person-chat{
+   font-size:20px;
+}
+
+/* Status  */
+
+.status-container{
+  padding: 0rem 0;
+}
+
+.status-list-fixed img{ 
+  width: 5%;
+  height: 5%;
+  position: fixed;
+  bottom: 4rem;
+  right: 5px;
+  z-index: 1;
+  padding: 5rem 1.1rem;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.status-list-fixed1 img{ 
+  width: 7%;
+  height: 7%;
+  position: fixed;
+  bottom: 0rem;
+  cursor: pointer;
+  right: -12px;
+  z-index: 1;
+  padding: 5rem 1.1rem;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.person-profile-status{
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding-bottom: 1rem;
+  }
+
+  .user-img{
+    width: 5rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+   cursor: pointer;
+}
+
+.person-profile{
+   display: flex;
+   align-items: center;
+}
+
+/* .user-img-status{
+  border: 2px solid #25D366;
+  padding:1px;
+} */
+
+.recent-update{
+  font-size: 1rem;
+  background: #ECE5DD;
+  padding: 2px;
+  margin-bottom: 0rem;
+}
+
+.last-chat-time img
+{
+  width: 100%;
+  /* height: 15%; */
+}
+
+.profile
+{
+  width: 1500%;
+}
+
+.status-list-fixed2 img{ 
+  width: 5%;
+  /* height: 5%; */
+  cursor: pointer;
+  position: fixed;
+  bottom: 4rem;
+  right: 5px;
+  z-index: 1;
+  padding: 5rem 1.1rem;
+  border-radius: 50%;
+  margin-bottom: -80px;
+}
+
+
+.head
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: aqua;
+}
+
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dialog {
+  box-shadow: 0 8px 6px -6px black;
+  position: static;
+  left: 0%;
+  top: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image1 {
+  /* position: fixed; */
+  width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small
+{
+  position: absolute;
+  font-size: 0px;
+  left: 30px;
+  top: 50px;
+  opacity: 0.1;
 }
